@@ -2,6 +2,7 @@ set(This SandboxTests)
 
 set(Sources
     ExampleTest.cpp
+    InheritedCodeTests.cpp
 )
 
 add_executable(${This} ${Sources})
