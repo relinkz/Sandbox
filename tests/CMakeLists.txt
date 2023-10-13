@@ -4,6 +4,7 @@ set(Sources
     ExampleTest.cpp
     InheritedCodeTests.cpp
     ExceptionalServerTests.cpp
+    MagicSpellsTests.cpp
 )
 
 add_executable(${This} ${Sources})

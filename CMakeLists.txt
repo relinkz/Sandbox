@@ -15,13 +15,15 @@ add_subdirectory(googletest)
 set(Headers
     Example.hpp
     InheritedCode.hpp
-    ExceptionalServer.cpp
-)
-
+    ExceptionalServer.hpp
+    MagicSpells.hpp
+    )
+    
 set(Sources
     Example.cpp
     InheritedCode.cpp
-    ExceptionalServer.hpp
+    ExceptionalServer.cpp
+    MagicSpells.cpp
 )
 
 add_library(${This} STATIC ${Sources} ${Headers})
