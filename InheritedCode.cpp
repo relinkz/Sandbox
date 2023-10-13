@@ -10,8 +10,9 @@ struct BadLengthException : public exception
     BadLengthException(const int n) : length(n) {}
     const char* what () const throw ()
     {
+        int copy = length;
         stringstream ss;
-        ss << "Too short: " << length << endl;
+        ss << "Too short: " << copy << endl;
         return ss.str().c_str();
     }
 };
